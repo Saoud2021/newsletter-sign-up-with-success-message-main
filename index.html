@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+
+</head>
+
+<body>
+
+  <div class="container" >
+    <picture>
+      <source media="(min-width: 650px)" srcset="assets/images/illustration-sign-up-desktop.svg">
+      <img src="assets/images/illustration-sign-up-mobile.svg" alt="">
+    </picture>
+    <div class="form">
+
+      <!-- Sign-up form start -->
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul class="checkmark-list">
+        <li>Product discovery and building what matters</li>
+        <li>Measuring to ensure updates are a success</li>
+        <li>And much more!</li>
+      </ul>
+
+      <form action="email">
+        <div class="form_group">
+          <label for="email">Email address</label>
+          <input placeholder="email@company.com" type="email" id="email">
+          <p class="error-message" style="display: none;">Valid email required</p>
+        </div>
+
+        <button class="button" id="subscribe">Subscribe to monthly newsletter</button>
+      </form>
+      <!-- Sign-up form end -->
+    </div>
+  </div>
+
+  <!-- Success message start -->
+
+  <div class="success"style="display: none;" >
+    <img src="./assets/images/icon-success.svg" alt="">
+    <h2>Thanks for subscribing!</h2>
+
+    <p>
+      A confirmation email has been sent to ash@loremcompany.com.
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+
+    <button class="button">Dismiss message</button>
+
+    <!-- Success message end -->
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script defer src="script.js"></script>
+</body>
+
+</html>
